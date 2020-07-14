@@ -53,5 +53,5 @@ Katharena is released by MIT license, more information in LICENSE file
 
 
 
-* : Why? Well, why not? :D
-** : Despite this, I cannot exclude the possibility of errors not detected by Katharena
+*: Why? Well, why not? :D
+**: Despite this, I cannot exclude the possibility of errors not detected by Katharena
