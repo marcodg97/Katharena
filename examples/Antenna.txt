@@ -1,0 +1,47 @@
+$link(A, 20.0.0.0/24)
+$link(B, 20.0.1.0/24)
+$link(C, 20.0.2.0/24)
+$link(D, 100.4.5.0/29)
+$link(E, 100.1.5.0/29)
+$link(F, 100.1.2.0/29)
+$link(G, 100.2.3.0/29)
+$link(H, 100.3.4.0/29)
+$link(I, 30.0.0.0/24)
+
+$client(user, A, 20.0.0.3, 20.0.0.1)
+
+$server(webserver, I, 30.0.0.2, 30.0.0.3)
+
+$router(router1, B, 20.0.1.1|eth0)
+$router(router1, A, 20.0.0.1|eth1)
+$rip(router1, 20.0.0.0/16)
+
+$router(router2, A, 20.0.0.2|eth0)
+$router(router2, C, 20.0.2.2|eth1)
+$rip(router2, 20.0.0.0/16)
+
+$router(bb1, F, 100.1.2.1|eth0)
+$router(bb1, E, 100.1.5.1|eth1)
+$ospf(bb1, 100.0.0.0/8)
+
+$router(bb2, G, 100.2.3.2|eth0)
+$router(bb2, F, 100.1.2.2|eth1)
+$ospf(bb2, 100.0.0.0/8)
+
+$router(bb3, I, 30.0.0.3|eth0)
+$router(bb3, H, 100.3.4.3|eth1)
+$router(bb3, G, 100.2.3.3|eth2)
+$ospf(bb3, 100.0.0.0/8)
+$ospf_cost(bb3, eth1, 40)
+
+$router(bb4, H, 100.3.4.4|eth0)
+$router(bb4, D, 100.4.5.4|eth1)
+$ospf(bb4, 100.0.0.0/8)
+
+$router(bb5, E, 100.1.5.5|eth0)
+$router(bb5, D, 100.4.5.5|eth1)
+$router(bb5, C, 20.0.2.5|eth2)
+$router(bb5, B, 20.0.1.5|eth3)
+$rip(bb5, 20.0.0.0/16, 0.0.0.0/0)
+$ospf(bb5, 100.0.0.0/8)
+
