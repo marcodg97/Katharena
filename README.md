@@ -51,7 +51,11 @@ You can find various examples in the folder "examples", all of those are Interme
 ### License
 Katharena is released by MIT license, more information in LICENSE file
 
+### Download
+You can download the binary JAR file [here](https://github.com/marcodg97/Katharena/releases)
 
+___
 
 *: Why? Well, why not? :D
+
 **: Despite this, I cannot exclude the possibility of errors not detected by Katharena
