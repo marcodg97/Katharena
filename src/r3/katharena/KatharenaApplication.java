@@ -5,7 +5,7 @@ import r3.katharena.shell.Shell;
 
 public class KatharenaApplication {
 	
-	private static final String VERSION = "0.6.0";
+	private static final String VERSION = "0.6.1";
 	
 	public static void main(String[] args) {
 		System.out.print("╔═══════════════╗\n║   KATHARENA   ║\n╚═══════════════╝\nby Marco De Giovanni\n(v"+VERSION+")\n\n");		

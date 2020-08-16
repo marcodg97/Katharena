@@ -113,6 +113,7 @@ public class Router extends Device {
 	public void setOspf(String ospfNetwork, String ospfArea) {
 		this.ospf = true;
 		this.ospfNetwork = ospfNetwork;
+		this.ospfArea = ospfArea;
 		System.out.println(name+" set as OSPF router with network "+ospfNetwork+" and area "+ospfArea);
 	}
 	
