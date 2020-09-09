@@ -18,10 +18,10 @@ Katharena is in no way associated with Katharà, I'm not trying to support all t
 
 ### How to use
 launching Katharena with the command `java -jar katharena.jar` will create an empty lab in memory named "lab", you can also use these two args:
-1. `-l` or `--load`, launch Katharena and load in memory the labs contained in the specified file
+1. `-l` or `--load`, launch Katharena and load in memory the lab contained in the specified file
 2. `-n` or `--name`, launch Katharena and name the lab with the specified name
 
-EXAMPLE: launch Katharena loading the lab contained in example.txt and naming it "testlab" launch Katharena loading the lab contained in example.txt and naming it "testlab"
+EXAMPLE: launch Katharena loading the lab contained in example.txt and naming it "testlab"
 ```
 java -jar katharena.jar -l example.txt --name testlab
 ```
