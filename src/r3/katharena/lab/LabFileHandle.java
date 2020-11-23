@@ -9,7 +9,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Date;
 
-import r3.katharena.LabPool;
 import r3.katharena.command.CommandHandle;
 import r3.katharena.lab.device.Device;
 

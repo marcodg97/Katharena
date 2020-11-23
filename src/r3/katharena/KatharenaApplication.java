@@ -1,6 +1,7 @@
 package r3.katharena;
 
 import r3.katharena.lab.LabFileHandle;
+import r3.katharena.lab.LabPool;
 import r3.katharena.shell.Shell;
 
 public class KatharenaApplication {

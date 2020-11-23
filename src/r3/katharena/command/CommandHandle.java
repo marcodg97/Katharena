@@ -1,6 +1,5 @@
 package r3.katharena.command;
 
-import r3.katharena.LabPool;
 import r3.katharena.lab.*;
 import r3.katharena.lab.device.*;
 

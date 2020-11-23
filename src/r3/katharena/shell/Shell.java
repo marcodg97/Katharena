@@ -2,8 +2,8 @@ package r3.katharena.shell;
 
 import java.util.Scanner;
 
-import r3.katharena.LabPool;
 import r3.katharena.command.CommandHandle;
+import r3.katharena.lab.LabPool;
 
 public class Shell {
 	
